@@ -1,0 +1,789 @@
+
+@font-face {
+    font-family: 'sp' ;
+    src: url('font/StretchPro.otf') format("opentype");
+}
+body{
+    background: #272727;
+    display: flex;
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+a{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.logo{
+    position: absolute;
+    left: 0%;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: 'Oswald', sans-serif;
+    background: #353535;
+    height: 8vh;
+
+}
+
+main{
+    background: url("fundo.jpg") no-repeat center center;
+    opacity: 0.2;
+    background-size: cover;
+    height:  92vh;
+}
+
+.lista{
+    position: absolute;
+    left: 70%;
+    top: 0;
+    padding: 12px;
+    width: 100px;
+    list-style: none;
+    display: flex;
+}
+.lista li{
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 2px;
+    margin-left: 30px;
+    color: rgb(255, 0, 0);
+}
+
+.for{
+    background-color:rgba(0, 0, 0, 0.8);
+    position: absolute;
+    padding: 3%;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    
+}
+
+
+
+input{
+    padding: 8px;
+    border: none;
+    border-radius: 5px;    
+}
+
+.logo{
+    top: 5px;
+    padding: 11px;
+}
+
+.render{
+    position: absolute;
+    left: 59%;
+    top: 30px;
+
+}
+
+.texto{
+    font-family:'Oswald', sans-serif;
+    font-size: 25px;
+    padding: 100px;
+    color: white;
+}
+
+.info{
+    padding: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.centro{
+    color: rgb(255, 0, 0);
+    font-family: 'Kanit', sans-serif;
+    font-size: 70px;
+    box-shadow: black;
+
+}
+
+.cima{
+    color: rgb(255, 0, 0);
+    font-size: 23px;
+
+}
+
+.jogue{
+    background-color: #ff0000c4;
+    font-family: 'Kanit', sans-serif;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    width: 80%;
+    border-radius: 2px;
+}
+
+.png{
+    top: -1%;
+    padding: 12px;
+    left: 2%;
+    position: absolute;
+}
+
+.content{
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 54%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+}
+
+.navegação{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+
+}
+
+.barra{
+    width: 70px;
+    height: 17px;
+    border:2px solid #fff;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.barra:hover{
+    background-color: #fff;
+}
+
+.op{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+.card{
+    position: absolute;
+    border: 15px;
+    top: 13%;
+    left: 75%;
+    padding: 9px;
+    border-radius: 20px;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.titi{
+    color: rgb(206, 0, 0);
+    font-family: 'Kanit', sans-serif;
+}
+
+
+
+.ma{
+    background: url("fundo.jpg") no-repeat center center;
+    background-attachment: fixed;
+    opacity: 0.5;
+    background-size: cover;
+    height:  92vh;
+}
+
+.inscriçao{
+    position: absolute;
+    padding: 15px;
+    border-radius: 20px;
+    height: 200px;
+    width: 700px;
+    left: 50%;
+    transform: translate(-50%);
+    color: rgb(255, 0, 0);
+    font-size: 15px;
+    font-family: 'Kanit', sans-serif;
+
+}
+.inscrit{
+    position: absolute;
+    display: flex;
+    top: 24%;
+    left: 30%;
+    font-family: 'Kanit', sans-serif;
+}
+
+.but{
+    position: absolute;
+    display: flex;
+    left: 30%;
+    top: 55%;
+    color: #fff;
+    padding: 8px;
+    background: rgb(190, 190, 190);
+    font-size: 15px;
+    border:none;
+    border-radius: 15px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.tt{
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%);
+    top: 10%;
+}
+.fftvt{
+    color: rgb(255, 0, 0);
+    position: absolute;
+    display: fixed;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+.perfil{
+    position: absolute;
+    top: 105%;
+    left: 8%;
+    display: flex;
+}
+
+.titulolive{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 13%;
+    top: 106%;
+
+}
+
+.nomelive{
+    position: absolute;
+    display: flex;
+    top: 109%;
+    left: 13%;
+}
+
+.very{
+    position: absolute;
+    top: 109%;
+    left: 19%;
+    display: flex;
+}
+
+.sobre{
+    position: absolute;
+    padding: 25px;
+    background-color: rgb(20, 20, 20);
+    border:none;
+    border-radius: 3px;
+    top: 120%;
+    left: 8%;
+    color: #fff;
+
+}
+
+.sobre2{
+    position: absolute;
+    display: flex;
+}
+
+.times{
+    position: absolute;
+    display: flex;
+    border: 1px solid rgb(138, 138, 138);
+    top: 10%;
+    left: 10%;
+    height: 600px;
+    width: 80%;
+}
+
+.timesquadro{
+    position: absolute;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font: center;
+    display: flex;
+    border: 1px solid rgb(139, 139, 139);
+    top: 5%;
+    left: 10%;
+    height: 50px;
+    width: 80%;
+}
+
+.timesquadro g{
+    position: absolute;
+    top: -5%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 35px;
+}
+
+.division{
+    position: absolute;
+    display: flex;
+    border: 1px solid rgb(138, 138, 138);
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 200px;
+    width: 40%;
+}
+
+.textdiv{
+    position: absolute;
+    display: flex;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font-size: 35px;
+    top: 31%;
+    left: 37%;
+}
+
+.logodiv{
+    position: absolute;
+    top: -15%;
+    left: -5%;
+}
+
+.linkdiv{
+    position: absolute;
+    display: flex;
+    border: 1px solid rgb(138, 138, 138);
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 200px;
+    width: 50%;
+}
+
+.logosdiv{
+    position: absolute;
+    left: 9%;
+    top: 20%;
+}
+
+.logosdivs{
+    opacity: 0;
+}
+.timesquadrodiv{
+    position: absolute;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font: center;
+    display: flex;
+    border: 1px solid rgb(139, 139, 139);
+    top: 2%;
+    left: 10%;
+    height: 50px;
+    width: 80%;
+}
+
+.timesquadrodiv g{
+    position: absolute;
+    top: -2%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 35px;
+}
+
+.timesdiv{
+    position: absolute;
+    display: flex;
+    border: 1px solid rgb(138, 138, 138);
+    top: 10%;
+    left: 10%;
+    height: 1470px;
+    width: 80%;
+}
+
+.cardfftv{
+    position: absolute;
+    display: flex;
+    top: 118%;
+    left: 35%;
+    padding: 9px;
+    border-radius: 20px;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.titifftv{
+    color: rgb(206, 0, 0);
+    font-family: 'Kanit', sans-serif;
+}
+
+.top1fftv{
+    color: #fff;
+    padding: 5px;
+
+}
+
+.top2fftv{
+    color: #fff;
+    padding: 5px;
+
+}
+
+
+@media screen and (max-width: 480px){
+    .png{
+        top: -1%;
+        padding: 12px;
+        left: 30%;
+        position: absolute;
+    }
+    .lista{
+        position: absolute;
+        left: 5%;
+        top: 7%;
+        padding: 12px;
+        width: 100px;
+        list-style: none;
+        display: flex;
+    }
+    .lista li{
+        font-family: 'Kanit', sans-serif;
+        letter-spacing: 2px;
+        margin-left: 30px;
+        color: rgb(255, 0, 0);
+    }
+    .content{
+        height: 249px;
+        width: 423px;
+        border-radius: 20px;
+        overflow: hidden;
+        position: absolute;
+        top: 17%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .card{
+        position: absolute;
+        display: flex;
+        top: 62%;
+        left: 5%;
+        padding: 5px;
+        font-family: 'Kanit', sans-serif;
+    
+    }
+    .top1{
+        padding: 5px;
+    }
+    .top2{
+        padding: 5px;
+    }
+    .titi{
+        color: rgb(206, 0, 0);
+        font-family: 'Kanit', sans-serif;
+    }
+    iframe{
+        display: flex;
+        border-radius: 20px;
+        height: 238px;
+        width: 423px;
+        top: 0%;
+        left: 20%;
+
+
+    }
+    .perfil{
+        position: absolute;
+        top: 25%;
+        left: 3%;
+        display: flex;
+    }
+    
+    .titulolive{
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        position: absolute;
+        left: 15%;
+        top: 26%;
+    
+    }
+    
+    .nomelive{
+        position: absolute;
+        top: 29%;
+        left: 16%;
+    }
+    
+    .very{
+        position: absolute;
+        top: 29%;
+        left: 32%;
+        display: flex;
+    }
+
+    .sobre{
+        position: absolute;
+        padding: 25px;
+        width: 375px;
+        background-color: rgb(20, 20, 20);
+        border:none;
+        border-radius: 3px;
+        top: 80%;
+        left: 3%;
+        color: #fff;
+    
+    }
+    
+    .sobre2{
+        position: absolute;
+        display: flex;
+    }
+
+    
+.cardfftv{
+    position: absolute;
+    display: table-column;
+    top: 127%;
+    left: 3%;
+    padding: 9px;
+    border-radius: 20px;
+    font-family: 'Kanit', sans-serif;
+
+}
+.cardfftv img{
+    border-radius:  20px;
+}
+
+.titifftv{
+    color: rgb(206, 0, 0);
+    font-family: 'Kanit', sans-serif;
+}
+
+.top1fftv{
+    color: #fff;
+    padding: 5px;
+
+}
+
+.top2fftv{
+    color: #fff;
+    padding: 5px;
+
+}
+.times{
+    position: absolute;
+    border-radius: 20px;
+    display: flex;
+    border: 1px solid rgb(138, 138, 138);
+    top: 20%;
+    left: 7%;
+    height: 300px;
+    width: 85%;
+}
+
+.timesquadro{
+    position: absolute;
+    border-radius: 15px;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font: center;
+    display: flex;
+    border: 1px solid rgb(139, 139, 139);
+    top: 5%;
+    left: 7%;
+    height: 50px;
+    width: 86%;
+}
+
+.timesquadro g{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 16px;
+}
+
+.division{
+    border-radius: 15px;
+    position: absolute;
+    display: flex;
+    border: 1px solid rgb(138, 138, 138);
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 200px;
+    width: 40%;
+}
+
+.textdiv{
+    position: absolute;
+    display: none;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font-size: 35px;
+    top: 31%;
+    left: 37%;
+}
+
+.logodiv{
+    position: absolute;
+    top: -15%;
+    left: -19%;
+}
+
+.linkdiv{
+    position: absolute;
+    display: flex;
+    border: 1px solid rgb(138, 138, 138);
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 200px;
+    width: 50%;
+}
+
+.logosdiv{
+display: none;
+    
+}
+
+.logosdivs{
+    opacity: 1.0;
+    position: absolute;
+    top: 30%;
+    left: 9%;
+}
+
+
+.timesquadrodiv{
+    position: absolute;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+    font: center;
+    display: flex;
+    border: 1px solid rgb(139, 139, 139);
+    top: 2%;
+    left: 10%;
+    height: 50px;
+    width: 80%;
+}
+
+.timesquadrodiv g{
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    font-size: 20px;
+}
+
+.timesdiv{
+    position: absolute;
+    display: flex;
+    border: 1px solid rgb(138, 138, 138);
+    top: 20%;
+    left: 10%;
+    height: 540px;
+    width: 80%;
+}
+
+.cardfftv{
+    position: absolute;
+    display: table-column;
+    top: 125%;
+    left: 5%;
+    padding: 9px;
+    border-radius: 20px;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.titifftv{
+    color: rgb(206, 0, 0);
+    font-family: 'Kanit', sans-serif;
+}
+
+.top1fftv{
+    color: #fff;
+    padding: 5px;
+
+}
+
+.top2fftv{
+    color: #fff;
+    padding: 5px;
+
+}
+
+.rodape{
+    position: absolute;
+    background-color: rgb(206, 0, 0);
+    width: 100%;
+    height: 100px;
+
+    top: 10%;
+}
+
+}
+
+
+.rodape{
+    position: absolute;
+    background-color: rgb(206, 0, 0);
+    width: 100%;
+    height: 100px;
+
+    top: 110%;
+}
+
+.rodape g{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    color: #272727;
+}
+
+
